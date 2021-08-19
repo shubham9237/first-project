@@ -4,6 +4,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [HeaderComponent,FooterComponent],
@@ -11,10 +14,11 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,
     MatToolbarModule,
     MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
-  exports:[HeaderComponent,FooterComponent,MatToolbarModule,
-    MatButtonModule,
-]
+  exports:[HeaderComponent,MatInputModule,FooterComponent,MatToolbarModule,MatButtonModule,MatCardModule,MatFormFieldModule]
 })
 
 export class SharedModule { }
