@@ -9,6 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from "./shared/shared-module"
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BodyComponent } from './home/body/body.component';
+import { ConnectComponent } from './home/body/connect/connect.component';
+import { ServicesComponent } from './home/body/services/services.component';
+import { GalleryComponent } from './home/body/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { BodyComponent } from './home/body/body.component';
     DashboardComponent,
     ProfileComponent,
     BodyComponent,
+    ConnectComponent,
+    ServicesComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,

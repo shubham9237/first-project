@@ -9,6 +9,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent],
@@ -19,6 +21,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTabsModule,
+    MatGridListModule
   ],
   exports: [
     HeaderComponent,
@@ -29,7 +33,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatTabsModule,
+    MatGridListModule
   ]
 })
 export class SharedModule {}

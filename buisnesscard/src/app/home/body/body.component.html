@@ -1,20 +1,30 @@
-<div fxLayout fxLayoutAlign="center center">
+<div fxLayout fxLayoutAlign="center center" style="height: 100%;overflow-y: scroll;">
     <mat-card fxFlex.gt-md="40%" fxFlex.lt-sm="95%" class="example-card">
         <mat-card-header>
             <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            <mat-card-title>9H Detailers
+            </mat-card-title>
+            <mat-card-subtitle>Car Studio
 
+            </mat-card-subtitle>
+            <span style="flex: 1 1 auto;"></span>
+            <button mat-mini-fab style="background-color: #38df57;">
+              <mat-icon style="margin-top: -3px;">whatsapp</mat-icon>
+            </button>
         </mat-card-header>
-        <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+        <hr style="width: 98%;border-block-color:rgba(0,0,0,.12)">
         <mat-card-content>
-            <p>
-                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
-            </p>
+            <mat-tab-group mat-align-tabs="center" color="accent">
+                <mat-tab label="Connect">
+                    <app-connect></app-connect>
+                </mat-tab>
+                <mat-tab label="Services">
+                    <app-services></app-services>
+                </mat-tab>
+                <mat-tab label="Gallery">
+                    <app-gallery></app-gallery>
+                </mat-tab>
+            </mat-tab-group>
         </mat-card-content>
-        <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-        </mat-card-actions>
     </mat-card>
 </div>

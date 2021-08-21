@@ -5,9 +5,16 @@ mat-card {
 
 .example-card {
     max-width: 400px;
+    height: calc(100% - 20px);
+    overflow-y: scroll;
 }
 
 .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
+}
+
+.mat-tab-nav-bar,
+.mat-tab-header {
+    border-bottom: 2px solid rgba(0, 0, 0, .12);
 }
