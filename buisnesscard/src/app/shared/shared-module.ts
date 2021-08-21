@@ -9,7 +9,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent],
@@ -20,9 +19,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule,
-    FlexLayoutModule,
-    FontAwesomeModule
   ],
   exports: [
     HeaderComponent,
@@ -33,8 +29,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
-    MatFormFieldModule,
-    FontAwesomeModule
-  ],
+    MatFormFieldModule
+  ]
 })
 export class SharedModule {}
