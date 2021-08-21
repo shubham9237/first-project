@@ -7,6 +7,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent],
@@ -21,11 +23,19 @@ import { MatInputModule } from '@angular/material/input';
   exports: [
     HeaderComponent,
     MatInputModule,
+    MatIconModule,
+    FlexLayoutModule
+  ],
+  exports: [
+    HeaderComponent,
+    MatIconModule,
+    MatInputModule,
+    FlexLayoutModule,
     FooterComponent,
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
-    MatFormFieldModule,
+    MatFormFieldModule
   ],
 })
 export class SharedModule {}
