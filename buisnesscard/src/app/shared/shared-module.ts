@@ -22,12 +22,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   ],
   exports: [
     HeaderComponent,
-    MatInputModule,
-    MatIconModule,
-    FlexLayoutModule
-  ],
-  exports: [
-    HeaderComponent,
     MatIconModule,
     MatInputModule,
     FlexLayoutModule,
@@ -36,6 +30,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule
-  ],
+  ]
 })
 export class SharedModule {}
