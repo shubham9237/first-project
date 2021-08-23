@@ -1,18 +1,18 @@
 .example-spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .custom-toolbar {
-    height: 56px;
-    width: 100%;
-    background-color: #3f51b5;
+  height: 45px;
+  width: 100%;
+  background-color: #141414;
 }
 
 mat-icon {
-    color: #fff;
+  color: #4cb493;
 }
 
-span {
-    color: #fff;
-    font-size: 15px;
+.heading {
+  color: #4cb493;
+  font-size: larger;
 }

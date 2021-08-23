@@ -1,30 +1,80 @@
-<div fxLayout fxLayoutAlign="center center" style="height: 100%;overflow-y: scroll;">
-    <mat-card fxFlex.gt-md="40%" fxFlex.lt-sm="95%" class="example-card">
-        <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>9H Detailers
-            </mat-card-title>
-            <mat-card-subtitle>Car Studio
+<!-- <div
+  fxLayout
+  fxLayoutAlign="center center"
+  style="height: 100%; overflow-y: scroll"
+>
+  <mat-card fxFlex.gt-md="40%" fxFlex.lt-sm="95%" class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>9H Detailers </mat-card-title>
+      <mat-card-subtitle>Car Studio </mat-card-subtitle>
+      <span style="flex: 1 1 auto"></span>
+      <button mat-mini-fab style="background-color: #38df57">
+        <mat-icon style="margin-top: -3px">whatsapp</mat-icon>
+      </button>
+    </mat-card-header>
+    <hr style="width: 98%; border-block-color: rgba(0, 0, 0, 0.12)" />
+    <mat-card-content>
+      <mat-tab-group mat-align-tabs="center" color="accent">
+        <mat-tab label="Connect">
+          <app-connect></app-connect>
+        </mat-tab>
+        <mat-tab label="Services">
+          <app-services></app-services>
+        </mat-tab>
+        <mat-tab label="Gallery">
+          <app-gallery></app-gallery>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+  </mat-card>
+</div> -->
 
-            </mat-card-subtitle>
-            <span style="flex: 1 1 auto;"></span>
-            <button mat-mini-fab style="background-color: #38df57;">
-              <mat-icon style="margin-top: -3px;">whatsapp</mat-icon>
-            </button>
-        </mat-card-header>
-        <hr style="width: 98%;border-block-color:rgba(0,0,0,.12)">
-        <mat-card-content>
-            <mat-tab-group mat-align-tabs="center" color="accent">
-                <mat-tab label="Connect">
-                    <app-connect></app-connect>
-                </mat-tab>
-                <mat-tab label="Services">
-                    <app-services></app-services>
-                </mat-tab>
-                <mat-tab label="Gallery">
-                    <app-gallery></app-gallery>
-                </mat-tab>
-            </mat-tab-group>
-        </mat-card-content>
-    </mat-card>
+<div fxLayout fxLayoutAlign="center " style="height: 100%; overflow-y: scroll">
+  <figure fxFlex.gt-md="40%" fxFlex.lt-sm="100%" class="snip">
+    <span class="whatsAppButton">
+      <button mat-mini-fab>
+        <mat-icon style="margin-top: -3px">whatsapp</mat-icon>
+      </button>
+    </span>
+    <img
+      src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+      alt="sample69"
+    />
+    <figcaption>
+      <img
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg"
+        alt="profile-sample5"
+        class="profile"
+      />
+      <h2>Desmond Eagle<span>Accountant</span></h2>
+      <p>
+        If you want to stay dad you've got to polish your image. I think the
+        image we need to create for you is "repentant but learning".
+      </p>
+
+      <div class="wrapper">
+        <nav class="tabs">
+          <div class="selector"></div>
+          <a
+            href="#profile"
+            (click)="selectedTab = 'Connect'"
+            role="tab"
+            class="active"
+          >
+            <i class="fal fa-address-card">&nbsp;Connect</i>
+          </a>
+          <a href="#buzz" (click)="selectedTab = 'Services'" role="tab">
+            <i class="fab fa-servicestack">&nbsp;Services </i>
+          </a>
+          <a href="#references" (click)="selectedTab = 'Gallery'" role="tab">
+            <i class="fal fa-images">&nbsp;Gallery</i>
+          </a>
+        </nav>
+      </div>
+    </figcaption>
+    <app-connect *ngIf="selectedTab === 'Connect'"></app-connect>
+    <app-services *ngIf="selectedTab === 'Services'"></app-services>
+    <app-gallery *ngIf="selectedTab === 'Gallery'"></app-gallery>
+  </figure>
 </div>

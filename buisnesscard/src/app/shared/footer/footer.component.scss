@@ -1,29 +1,16 @@
 .custom-toolbar {
-    height: 56px;
-    width: 100%;
-    background-color: #3f51b5;
+  height: 45px;
+  width: 100%;
+  background-color: #141414;
 }
 
 i {
-    margin-top: -2px !important
+  margin-top: -2px !important;
 }
 
-.fa-facebook {
-    color: #1677f2;
-}
-
-button {
-    background-color: #fff !important;
-}
-
-.fa-telegram {
-    color: #25a2e0;
-}
-
-.fa-youtube {
-    color: red;
-}
-
+.fa-facebook,
+.fa-telegram-plane,
+.fa-youtube,
 .fa-instagram {
-    color: black;
+  color: #4cb493;
 }
